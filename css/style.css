@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+:root{
+    --colordarkblue: #201f41;
+    --colorviolet: #422d53;
+    --colordarkpink: #912e54;
+    --colorpink:#d1788f;
+    --colorlightpink: #dd7c86;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.testimonial-text {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.box-shadow {
+  box-shadow: 10px 10px grey 1;
+  border-radius: 10px;
+}
+
+
+.testimonialbackgrounds{
+  background: linear-gradient(to right, var(--colorlightpink), var(--colorpink)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: var(--colordarkblue);
+
+  position: relative;
+
+}
+
+
+.logos{
+  width: 150px;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.8));
+  box-shadow: 0 0 0 3px var(--colorviolet) inset;
+  border: solid 3px var(--colordarkpink);
+  border-radius: 5px;
+  padding: 20px;
+
+  position: absolute;
+  top: 25%;
+  left: 10%;
+
+  z-index: 3;
+
+}
+
+.outerboxs{
+  content: '';
+  width: 150px;
+  height: 150px;
+  /* background-color: red; */
+  border-top: 5px solid var(--colordarkblue);
+  border-right: 5px solid var(--colordarkblue);
+  /* border-radius: 5px; */
+
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  /* if the alignments are changes, you can adjust the % here */
+}
+
+.outerboxs::before{
+  content: '';
+  width: 5px;
+  height: 25px;
+  background-color: var(--colordarkblue);
+
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+.outerboxs::after{
+  content: '';
+  width: 25px;
+  height: 5px;
+  background-color: var(--colordarkblue);
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
